@@ -1,0 +1,398 @@
+                      /* Estilos comun a las distintas paginas */
+
+
+body{
+font-family: 'Cherry Bomb One', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Monomaniac One', sans-serif;
+
+
+
+}
+
+h1{
+    color:#547980;
+    text-align: left;
+    font-style: oblique;
+    font-family: 'Dancing Script', cursive;
+    ;
+
+}
+h2{
+    color: #547980;
+    text-align: center;
+    font-style: oblique;
+    font-family: 'Dancing Script', cursive;
+}
+
+p{
+    color: #45ada8
+}
+
+   .titulo-centralizado {
+    background-image: url('../imagenes/water.jpg') ;
+    background-position: center;
+    background-size: cover;
+    width: 80%; /*ancho del 100 de la pagina*/
+    height: 90px;
+    border-radius: 25px; 
+    padding: 20px;
+    margin: 10px;
+    border: 20px;
+   
+   }
+
+   
+   .titulo-centralizado ul li {
+
+    display: inline; /*los elementos se mostrarán uno al lado del otro horizontalmente*/
+    margin: 15px; /*agrega un margen de 30 píxeles en todos los lados del elemento*/
+    
+}
+
+.titulo-centralizado ul li a{
+    color: azure;
+    text-align: center;
+}
+      
+
+  li{
+    color: hsl(318, 88%, 35%);
+    text-align: center;
+  }
+
+  .titulo-centralizado ul {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px ;
+  }
+
+                                          /*estilos index*/
+
+.carrusel {
+overflow-x: scroll; /* Permite el desplazamiento horizontal */
+scroll-behavior: smooth; /* Agrega un desplazamiento suave */
+white-space: nowrap; /* Evita que las imágenes se envuelvan */
+}                                      
+
+ 
+.grid {
+  display:grid;
+  justify-content: center;
+  grid-template-columns: 48% 48%;
+  grid-template-rows: 300px 200px  ;
+  row-gap: 15px;
+  column-gap: 15px;
+  grid-template-areas:
+  "menu main"  
+  "foot foot";
+   }   
+   
+   @media (max-width: 480px) {
+    .grid {
+      grid-template-areas:
+      "menu main"  
+      "foot main";
+      
+    }
+  }
+ 
+   
+
+  .c {
+    grid-area: menu;
+    background: rgb(255, 136, 0);
+    border-radius: 20px;
+  }
+  
+  .d {
+    grid-area: main;
+    background: green;
+    border-radius: 20px;
+  }
+  
+  .e {
+    grid-area: foot;
+    background: orange;
+    border-radius: 20px;
+  }
+  
+  @media (max-width: 480px) {
+    .c {
+      background: rgb(0, 140, 255);
+
+    }
+  }
+  @media (max-width: 480px) {
+    .d {
+      background: rgb(255, 0, 0);
+
+    }
+ 
+
+
+  
+  
+}
+                         
+                              
+
+
+                              /* Estilos newsletters */
+
+*{
+  box-sizing: border-box;
+ }/*el ancho y alto de un elemento no se verán afectados por el tamaño del borde y el relleno.*/
+
+
+.contenedor-padre1 h1
+{
+text-align: center;  
+font-style: normal;
+}
+
+.contenedor-padre p 
+{
+  text-align: center;      
+}
+
+.subconteiner7
+{
+  background-image: url('../imagenes/boca.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  height: 380px;
+  width: 31%;
+  margin: 14px;
+  display:inline-block;
+}
+
+/**/
+
+.subconteiner8
+{
+  background-image: url('../imagenes/mujersentada.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  height: 380px;
+  width: 31%;
+  margin: 14px;
+  display:inline-block;
+}
+
+
+.subconteiner9
+{
+  background-image: url('../imagenes/manosalvavidas.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  height: 380px;
+  width: 31%;
+  margin: 14px;
+  display:inline-block;
+}
+
+.subconteiner10
+{
+  background-image: url('../imagenes/adolescentes.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  height: 380px;
+  width: 36%;
+  margin: 15px;
+  display:inline-block;
+}
+
+.-centralizado {
+  text-align: center; /* Alinea el texto al centro */
+  margin-top: 20px; /* Agrega un margen superior según tus necesidades */
+}
+
+  
+.subconteiner11
+{
+  background-image: url('../imagenes/trabajando.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  height: 380px;
+  width: 28%;
+  margin: 15px;
+  display:inline-block;
+}
+
+.subconteiner12
+{
+  background-image: url('../imagenes/pie.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  height: 380px;
+  width: 28%;
+  margin: 15px;
+  display:inline-block;
+}
+
+.centrado {
+  display: flex;
+  justify-content: center;
+}
+
+.Newsletters-centralizado {
+  text-align: center; /* Alinea el texto al centro */
+  margin-top: 20px; /* Agrega un margen superior según tus necesidades */
+}
+ 
+ 
+
+                          /* Estilos Guias Digitales */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}/*el ancho y alto de un elemento no se verán afectados por el tamaño del borde y el relleno.*/
+
+
+.contenedor-padre h1 
+{
+  text-align: center;  
+  font-style: normal;
+}
+ 
+.contenedor-padre p 
+{
+ text-align: center;      
+}
+
+.subconteiner1
+  {
+    background-image: url('../imagenes/ninacaminando.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    height: 380px;
+    width: 25%;
+    margin: 14px;
+    display:inline-block;
+  }
+
+ /**/
+ 
+  .subconteiner2
+  {
+    background-image: url('../imagenes/familiafeliz.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    height: 380px;
+    width: 25%;
+    margin: 14px;
+    display:inline-block;
+  }
+
+
+  .subconteiner3
+  {
+    background-image: url('../imagenes/vejez.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    height: 380px;
+    width: 43%;
+    margin: 14px;
+    display:inline-block;
+  }
+
+  .subconteiner4
+  {
+    background-image: url('../imagenes/trabajadorfeliz.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    height: 380px;
+    width: 43%;
+    margin: 14px;
+    display:inline-block;
+  }
+
+    .subconteiner5
+  {
+    background-image: url('../imagenes/niñosfelices.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    height: 380px;
+    width: 25%;
+    margin: 14px;
+    display:inline-block;
+  }
+
+  .subconteiner6
+  {
+    background-image: url('../imagenes/pareja.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    height: 380px;
+    width: 25%;
+    margin: 14px;
+    display:inline-block;
+  }
+
+  .centrado {
+    display: flex;
+    justify-content: center;
+  }
+
+  .Guiasdigitales-centralizado {
+    text-align: center; /* Alinea el texto al centro */
+    margin-top: 20px; /* Agrega un margen superior según tus necesidades */
+  }
+
+                               /* Estilos sobremi */
+
+.datospersonales{
+  color: #032903;/* aca hago que el h2 de esta seccion tome este color y no el comun para todos */
+  text-align: center;
+}
+
+
+
+
+.experiencialaboral{
+    color: #547980;
+    text-align: left;
+   
+  }
+
+  .fotoperfil {
+    width: 550px; /* Ancho deseado */
+    border-radius: 15px;
+    margin: 30px;
+    display: block; /*Establece el elemento como un bloque, lo cual es necesario para aplicar márgenes automáticos.*/
+    margin-left: auto; /*lo que hace que el elemento se centre horizontalmente en su contenedor.*/
+    margin-right: auto; /*lo que hace que el elemento se centre horizontalmente en su contenedor.*/
+}
+
+                                 /* Estilos Contacto*/
+
+
+ 
+
+   
+   /* Estilos de pruebas*/
+
+   
+  
+   
+
+
+
+  
+  
+  

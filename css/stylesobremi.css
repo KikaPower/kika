@@ -1,0 +1,81 @@
+
+/* menu de arriba */
+
+
+  .titulo-centralizado {
+    background-image: url('../imagenes/water.jpg') ;
+    background-position: center;
+    background-size: cover;
+    width: 80%; /*ancho del 100 de la pagina*/
+    height: 90px;
+    border-radius: 25px; 
+    padding: 20px;
+    margin: 10px;
+    border: 20px;
+   
+   }
+
+   .titulo-centralizado ul li {
+
+    display: inline; /*los elementos se mostrarán uno al lado del otro horizontalmente*/
+    margin: 15px; /*agrega un margen de 30 píxeles en todos los lados del elemento*/
+    
+}
+
+.titulo-centralizado ul li a{
+    color: azure;
+    text-align: center;
+}
+      
+
+  li{
+    color: hsl(318, 88%, 35%);
+    text-align: center;
+  }
+
+  .titulo-centralizado ul {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px ;
+  }
+
+
+/* sobre mi */
+.grid {
+    display:grid;
+     grid-template-areas:
+                           
+     "meenu fooot"  
+     "maain fooot"
+     "exxtra exxtra"
+    ;
+ }                    
+ 
+
+.f { grid-area:meenu; background:red ;
+    border-radius: 20px; }
+.g { grid-area:maain; background:green ;
+    border-radius: 20px; }
+.h { grid-area:fooot; background:rgb(89, 0, 255) ;
+    border-radius: 20px; }
+.j { grid-area:exxtra; background:orange ;
+    border-radius: 20px;}
+
+    @media (max-width: 480px) {
+        .f {
+        background: rgb(0, 140, 255);
+       
+    
+        }
+      }
+
+
+
+.grid {
+  display: grid;   
+  grid-template-columns: 800px 510px auto  ;
+  grid-template-rows: 200px 200px 380px ;
+  row-gap: 15px;
+  column-gap: 15px;
+  padding: 15px;
+}
